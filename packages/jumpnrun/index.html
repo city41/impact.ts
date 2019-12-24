@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Generic Jump'n'Run</title>
+	<style type="text/css">
+		html,body {
+			background-color: #333;
+			color: #fff;
+			font-family: helvetica, arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 12pt;
+		}
+		
+		#canvas {
+			position: absolute;
+			left: 0;
+			top: 0;
+			margin: auto;
+		}
+	</style>
+	
+	<!-- We advise mobile browser to leave the page unscaled; If scaling is 
+		neccessary, we will do it in the canvas element itself. 
+		Also make sure to hide address bar and navigation buttons and make the 
+		status bar transparent on iOS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript" src="src/index.ts"></script>
+</body>
+</html>

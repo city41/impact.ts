@@ -1,0 +1,39 @@
+{
+  "name": "@city41/impact.ts",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/impact.js",
+  "typings": "dist/impact.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "rollup": "tsdx build",
+    "prebuild": "yarn clean",
+    "build": "tsc",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist && rm -f tsconfig.tsbuildinfo"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1",
+    "tsdx": "^0.12.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "impact.ts",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "yarn workspaces run build",
+    "clean": "yarn workspaces run clean && rm -rf node_modules && rm -rf packages/*/node_modules",
+    "preplay": "yarn build",
+    "play": "(cd packages/jumpnrun/dist && http-server)"
+  },
+  "workspaces": ["packages/*"]
+}
