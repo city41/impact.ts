@@ -2,6 +2,10 @@
 
 This is [Impact](https://github.com/phoboslab/Impact), a JavaScript game engine, ported to TypeScript.
 
+# Status: Dormant
+
+After porting Impact to TS, I ended up forking it into my (currently closed source) game and making a lot of changes that only make sense for my game. So due to that, I am not actively working on the port found in this repo. 
+
 # Changes
 
 Here is what is different between impact.ts and standard Impact:
@@ -67,9 +71,7 @@ Since impact.ts is a standard TypeScript library, there is no need for any kind 
 
 The game will be built, then available at http://localhost:8080
 
-# Status
 
-I juuuuust finished this port at the time of this writing. There are surely bugs to be found. There are also still some type issues to resolve. I will file all known remaining work as issues in this repo
 
 # License
 
